@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                <i class="fas fa-check-circle"></i>
+                My Task
+            </h1>
+            <p id="date"></p>
+        </header>
+        <div class="todo-input">
+            <input type="text" id="input" placeholder="What did you need to do?">
+            <button id="addBtn"><i class="fas fa-plus"></i></button>
+        </div>
+        <div class="filters">
+            <span class="filter active" data-filter="all">All</span>
+            <span class="filter" data-filter="active">Active</span>
+            <span class="filter" data-filter="completed">Completed</span>
+        </div>
+        <div class="todos-container">
+              <ul class="todo-list" id="todo-list">
+            <!-- List items will be dynamically added here -->
+             <!-- <li class="todo-item">
+               <label  class="check-container">
+                <input type="checkbox" class="todo-checkbox">
+                <span class="checkmark"></span>
+               </label>
+               <span class="todo-item-text">Learn Python</span>
+               <button class="delete-btn"><i class="fas fa-times"></i></button>
+             </li>
+             <li class="todo-item completed">
+               <label  class="check-container">
+                <input type="checkbox" class="todo-checkbox">
+                <span class="checkmark"></span>
+               </label>
+               <span class="todo-item-text">Learn Java</span>
+               <button class="delete-btn"><i class="fas fa-times"></i></button>
+             </li>  -->
+            </ul>
+
+            <div class="empty-state hidden" id="empty-state">
+                <i class="fas fa-clipboard-list"></i>
+                <p>No task here yet</p>
+            </div>
+        </div>
+      <footer>
+          <span id="items-left">0 items left</span>
+          <button id="clear-completed">Clear Completed</button>
+      </footer>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
