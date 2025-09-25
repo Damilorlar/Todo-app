@@ -19,7 +19,7 @@ addBtn.addEventListener("click", ()=>{
 });
 
 taskInput.addEventListener("keydown",(e)=>{
-    if(e.key === "enter") addTodo(taskInput.value)
+    if(e.key === "Enter") addTodo(taskInput.value)
 });
 
 // clear completed button function
